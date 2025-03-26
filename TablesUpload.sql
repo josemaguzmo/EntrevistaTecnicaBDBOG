@@ -1,6 +1,6 @@
 /*Carga de datos en la tabla de dimensiones de clientes */
 
-MERGE INTO dim_clientes AS target
+		MERGE INTO dim_clientes AS target
 		USING staging_transacciones AS source
 		ON target.numero_identificacion = source.numero_identificacion
 		WHEN MATCHED THEN
