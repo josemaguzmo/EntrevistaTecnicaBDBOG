@@ -1,6 +1,6 @@
 /* consulta para identificar los clientes más relevantes */
 
-SELECT 
+	SELECT 
 		c.id_cliente,
 		c.nombre,
 		SUM(f.monto) AS total_transacciones,
